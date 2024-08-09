@@ -1,0 +1,826 @@
+:root {
+--sdc-border-width: 1px;
+    --sdc-border-radius: 3px;
+    --sdc-palette-common-black: #000;
+    --sdc-palette-common-white: #FFF;
+    --sdc-palette-primary-main: #5548D9;
+    --sdc-palette-primary-light: #EEECFB;
+    --sdc-palette-primary-dark: #4A37D5;
+    --sdc-palette-primary-contrastText: #fff;
+    --sdc-palette-secondary-main: #ff3d00;
+    --sdc-palette-secondary-light: #ff6e40;
+    --sdc-palette-secondary-dark: #dd2c00;
+    --sdc-palette-secondary-contrastText: #fff;
+    --sdc-palette-grey-100: #f5f5f5;
+    --sdc-palette-grey-200: #ECECEC;
+    --sdc-palette-grey-300: #DDDDDD;
+    --sdc-palette-grey-400: #CFCFCF;
+    --sdc-palette-grey-500: #C0C0C0;
+    --sdc-palette-grey-600: #B8B8B8;
+    --sdc-palette-grey-700: #A7A7A7;
+    --sdc-palette-grey-800: #979797;
+    --sdc-palette-grey-900: #777777;
+    --sdc-palette-info-main: #0288d1;
+    --sdc-palette-info-light: #03a9f4;
+    --sdc-palette-info-dark: #01579b;
+    --sdc-palette-info-contrastText: #fff;
+    --sdc-palette-success-main: #2e7d32;
+    --sdc-palette-success-light: #4caf50;
+    --sdc-palette-success-dark: #1b5e20;
+    --sdc-palette-success-contrastText: #fff;
+    --sdc-palette-error-main: #d32f2f;
+    --sdc-palette-error-light: #ef5350;
+    --sdc-palette-error-dark: #c62828;
+    --sdc-palette-error-contrastText: #fff;
+    --sdc-palette-warning-main: #ed6c02;
+    --sdc-palette-warning-light: #ff9800;
+    --sdc-palette-warning-dark: #e65100;
+    --sdc-palette-warning-contrastText: #fff;
+    --sdc-palette-text-primary: rgba(0, 0, 0, 0.87);
+    --sdc-palette-text-secondary: rgba(0, 0, 0, 0.6);
+    --sdc-palette-text-disabled: rgba(0, 0, 0, 0.38);
+    --sdc-spacing-default: 1rem;
+    --sdc-spacing-none: 0;
+    --sdc-spacing-xs: 4px;
+    --sdc-spacing-s: 8px;
+    --sdc-spacing-m: 16px;
+    --sdc-spacing-l: 32px;
+    --sdc-spacing-xl: 64px;
+    --sdc-typography-fontFamilySystem: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+    --sdc-typography-fontSize: 18px;
+    --sdc-typography-lineHeight: 32px;
+    --sdc-typography-fontWeight: 500;
+    --sdc-typography-fontSize1-fontSize: 12px;
+    --sdc-typography-fontSize1-fontWeight: 400;
+    --sdc-typography-fontSize1-lineHeight: 24px;
+    --sdc-typography-fontSize2-fontSize: 14px;
+    --sdc-typography-fontSize2-fontWeight: 400;
+    --sdc-typography-fontSize2-lineHeight: 24px;
+    --sdc-typography-fontSize3-fontSize: 16px;
+    --sdc-typography-fontSize3-fontWeight: 400;
+    --sdc-typography-fontSize3-lineHeight: 32px;
+    --sdc-typography-fontSize4-fontSize: 18px;
+    --sdc-typography-fontSize4-fontWeight: 400;
+    --sdc-typography-fontSize4-lineHeight: 32px;
+    --sdc-typography-fontSize5-fontSize: 20px;
+    --sdc-typography-fontSize5-fontWeight: 400;
+    --sdc-typography-fontSize5-lineHeight: 40px;
+    --sdc-typography-fontSize6-fontSize: 22px;
+    --sdc-typography-fontSize6-fontWeight: 700;
+    --sdc-typography-fontSize6-lineHeight: 40px;
+    --sdc-typography-fontSize7-fontSize: 24px;
+    --sdc-typography-fontSize7-fontWeight: 400;
+    --sdc-typography-fontSize7-lineHeight: 48px;
+    --sdc-typography-fontSize8-fontSize: 26px;
+    --sdc-typography-fontSize8-fontWeight: 400;
+    --sdc-typography-fontSize8-lineHeight: 48px;
+    --sdc-typography-h1-fontFamilySystem: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+    --sdc-typography-h1-fontSize: 28px;
+    --sdc-typography-h1-fontWeight: 400;
+    --sdc-typography-h1-lineHeight: 40px;
+    --sdc-typography-h2-fontFamilySystem: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+    --sdc-typography-h2-fontSize: 24px;
+    --sdc-typography-h2-fontWeight: 400;
+    --sdc-typography-h2-lineHeight: 36px;
+    --sdc-typography-h3-fontFamilySystem: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+    --sdc-typography-h3-fontSize: 20px;
+    --sdc-typography-h3-fontWeight: 400;
+    --sdc-typography-h3-lineHeight: 32px;
+    --sdc-typography-h4-fontFamilySystem: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+    --sdc-typography-h4-fontSize: 18px;
+    --sdc-typography-h4-fontWeight: 500;
+    --sdc-typography-h4-lineHeight: 28px;
+    --sdc-typography-h5-fontFamilySystem: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+    --sdc-typography-h5-fontSize: 16px;
+    --sdc-typography-h5-fontWeight: 500;
+    --sdc-typography-h5-lineHeight: 24px;
+    --sdc-typography-h6-fontFamilySystem: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+    --sdc-typography-h6-fontSize: 14px;
+    --sdc-typography-h6-fontWeight: 500;
+    --sdc-typography-h6-lineHeight: 20px;
+}
+@keyframes rotate-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* SortSelectTrigger */
+.sitecore-sort-select-trigger {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sdc-spacing-xs);
+  background-color: transparent;
+  height: 40px;
+  padding: var(--sdc-spacing-xs) var(--sdc-spacing-m);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize1-fontSize);
+  border: none;
+}
+
+.sitecore-sort-select-trigger:focus {
+  outline: none;
+}
+
+/* GenericSelectTrigger */
+.sitecore-generic-select-trigger {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sdc-spacing-xs);
+  background-color: transparent;
+  height: 40px;
+  padding: var(--sdc-spacing-xs) var(--sdc-spacing-m);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize3-fontSize);
+  border: none;
+}
+
+.sitecore-generic-select-trigger:focus {
+  outline: none;
+}
+
+/* SortSelectContent */
+.sitecore-sort-select-content {
+  background-color: var(--sdc-palette-primary-contrastText);
+  overflow: hidden;
+  box-shadow: 2px 2px 4px var(--sdc-palette-grey-400);
+  position: absolute;
+  top: 30px;
+  z-index: 100;
+}
+
+.sitecore-sort-select-content:focus-within {
+  border-color: var(--sdc-palette-primary-dark);
+}
+
+/* GenericSelectContent */
+.sitecore-generic-select-content {
+  background-color: var(--sdc-palette-primary-contrastText);
+  overflow: hidden;
+  box-shadow: 2px 2px 4px var(--sdc-palette-grey-400);
+  position: absolute;
+  top: 30px;
+  z-index: 100;
+}
+
+.sitecore-generic-select-content:focus-within {
+  border-color: var(--sdc-palette-primary-dark);
+}
+
+/* SortSelectViewport */
+.sitecore-sort-select-viewport {
+  padding: var(--sdc-spacing-xs);
+  z-index: 50000;
+}
+
+/* GenericSelectViewport */
+.sitecore-generic-select-viewport {
+  padding: var(--sdc-spacing-xs);
+  z-index: 50000;
+}
+
+/* SortSelectOption */
+.sitecore-sort-select-option {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  height: 25px;
+  padding: 0 var(--sdc-spacing-xs);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize1-fontSize);
+  position: relative;
+  border-radius: 0;
+}
+
+.sitecore-sort-select-option[data-highlighted] {
+  border-radius: 0;
+  background-color: var(--sdc-palette-primary-dark);
+  color: var(--sdc-palette-primary-contrastText);
+}
+
+.sitecore-sort-select-option[data-disabled] {
+  color: var(--sdc-palette-grey-800);
+  font-style: italic;
+}
+
+.sitecore-sort-select-option[data-state='checked'] {
+  color: var(--sdc-palette-primary-main);
+  background-color: var(--sdc-palette-common-white);
+}
+
+/* GenericSelectOption */
+.sitecore-generic-select-option {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  height: 25px;
+  padding: 0 var(--sdc-spacing-xs);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize1-fontSize);
+  position: relative;
+  border-radius: 0;
+}
+
+.sitecore-generic-select-option[data-highlighted] {
+  border-radius: 0;
+  background-color: var(--sdc-palette-primary-dark);
+  color: var(--sdc-palette-primary-contrastText);
+}
+
+.sitecore-generic-select-option[data-disabled] {
+  color: var(--sdc-palette-grey-800);
+  font-style: italic;
+}
+
+.sitecore-generic-select-option[data-state='checked'] {
+  color: var(--sdc-palette-primary-main);
+  background-color: var(--sdc-palette-common-white);
+}
+
+/* SortSelectValue */
+.sitecore-sort-select-value {
+  color: var(--sdc-palette-primary-main);
+}
+
+/* GenericSelectValue */
+.sitecore-generic-select-value {
+  color: var(--sdc-palette-primary-main);
+}
+
+/* SortSelectIcon */
+.sitecore-sort-select-icon {
+}
+
+/* GenericSelectIcon */
+.sitecore-generic-select-icon {
+}
+
+/* SortSelectOptionText */
+.sitecore-sort-select-option-text {
+}
+
+/* GenericSelectOptionText */
+.sitecore-generic-select-option-text {
+  
+}
+
+/* ArticleRoot */
+.sitecore-article-root {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  padding: var(--sdc-spacing-m);
+  margin-top: var(--sdc-spacing-m);
+  margin-bottom: var(--sdc-spacing-m);
+  flex-flow: row nowrap;
+  border:1px solid var(--sdc-palette-grey-400);
+  border-radius: var(--sdc-border-radius);
+  width: 100%;
+  max-height: 200px;
+}
+
+.sitecore-article-root:focus-within {
+  border: solid 1px var(--sdc-palette-primary-main);
+}
+
+.sitecore-article-root:hover {
+  transition-property: all;
+  transition-timing-function: linear;
+  transition-duration: 300ms;
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 10%),
+    0 4px 6px -4px rgb(0 0 0 / 10%);
+  transform: scaleX(1.05) scaleY(1.05);
+}
+
+/* ArticleTitle */
+.sitecore-article-title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 var(--sdc-spacing-s);
+  color: var(--sdc-palette-text-primary);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize6-fontSize);
+  font-weight: var(--sdc-typography-fontSize6-fontWeight);
+  line-height: var(--sdc-typography-fontSize6-lineHeight);
+}
+
+/* ArticleSubtitle */
+.sitecore-article-subtitle {
+  color: var(--sdc-palette-text-secondary);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize2-fontSize);
+  font-weight: var(--sdc-typography-fontSize2-fontWeight);
+  line-height: var(--sdc-typography-fontSize2-lineHeight);
+  margin: 0 0 var(--sdc-spacing-s);
+}
+
+/* ArticleImageWrapper */
+.sitecore-article-image-wrapper {
+  overflow: hidden;
+  flex: none;
+  width: 25%;
+}
+
+/* ArticleImage */
+.sitecore-article-image {
+  object-position: center;
+  width: 50px;
+  height: 50px;
+}
+
+/* ArticleContent */
+.sitecore-article-content {
+  padding-left: var(--sdc-spacing-m);
+  flex-direction: column;
+}
+
+/* ArticleSpan */
+.sitecore-article-span {
+  position: absolute;
+  inset: 0;
+}
+
+/* ArticleContentText */
+.sitecore-article-content-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: var(--sdc-typography-fontSize);
+  line-height: 1.25rem;
+}
+
+/* ArticleId */
+.sitecore-article-id {
+  font-family: var(--sdc-typography-fontFamilySystem);
+  color: var(--sdc-palette-primary-main);
+  font-size: var(--sdc-typography-fontSize1-fontSize);
+}
+
+/* ArticleLink */
+.sitecore-article-link {
+  text-decoration: none;
+  color: var(--sdc-palette-primary-main);
+  font-size: var(--sdc-typography-fontSize4-fontSize);
+}
+
+.sitecore-article-link:hover {
+  text-decoration: none;
+}
+
+.sitecore-article-link:focus {
+  text-decoration: none;
+}
+
+/* AccordionItemCheckbox */
+.sitecore-accordion-item-checkbox {
+  all: unset;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  flex: none;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sitecore-accordion-item-checkbox[data-state='checked'] {
+  color: var(--sdc-palette-primary-contrastText);
+  background-color: var(--sdc-palette-primary-main);
+}
+
+.sitecore-accordion-item-checkbox:focus {
+  border: solid 1px var(--sdc-palette-primary-main);
+}
+
+/* AccordionItemToggle */
+.sitecore-accordion-item-toggle {
+  all: unset;
+  width: 40px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--sdc-typography-fontSize1-fontSize);
+  margin-right: var(--sdc-spacing-s);
+}
+
+.sitecore-accordion-item-toggle:focus {
+  border: solid 1px var(--sdc-palette-primary-main);
+}
+
+.sitecore-accordion-item-toggle[data-state='on'] {
+  background-color: var(--sdc-palette-primary-main);
+  color: var(--sdc-palette-primary-contrastText);
+}
+
+/* AccordionItemCheckboxIndicator */
+.sitecore-accordion-item-checkbox-indicator {
+  color: var(--sdc-palette-primary-contrastText);
+  width: 15px;
+  height: 15px;
+}
+
+/* AccordionValueList */
+.sitecore-accordion-value-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sitecore-accordion-value-list li {
+  padding: var(--sdc-spacing-xs) 0;
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize);
+}
+
+.sitecore-accordion-value-list[data-orientation='horizontal'] {
+  display: flex;
+  flex-direction: row;
+}
+
+/* AccordionItemCheckboxLabel */
+.sitecore-accordion-item-checkbox-label {
+  padding-left: var(--sdc-spacing-m);
+}
+
+/* AccordionItem */
+.sitecore-accordion-item {
+  display: flex;
+  align-items: center;
+}
+
+/* AccordionHeader */
+.sitecore-accordion-header {
+  display: flex;
+  margin: 0;
+}
+
+/* AccordionTrigger */
+.sitecore-accordion-trigger {
+  align-items: center;
+  display: flex;
+  color: var(--sdc-palette-text-primary);
+  font-size: var(--sdc-typography-fontSize3-fontSize);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-weight: 600;
+  padding: 0;
+  justify-content: space-between;
+  line-height: 1;
+  flex: 1 1 0;
+  background: none;
+  border: none;
+}
+
+/* AccordionFacetsFacet */
+.sitecore-accordion-facets-facet {
+  border-bottom: solid 1px var(--sdc-palette-grey-800);
+  margin-bottom: var(--sdc-spacing-m);
+  padding-bottom: var(--sdc-spacing-m);
+}
+
+/* AccordionFacetsContent */
+.sitecore-accordion-facets-content {
+}
+
+/* AccordionFacetsRoot */
+.sitecore-accordion-facets-root {
+}
+
+/* PaginationRoot */
+.sitecore-pagination-root {
+  color: var(--sdc-palette-text-primary);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  display: flex;
+  margin-top: var(--sdc-spacing-m);
+}
+
+/* PaginationPrevPage */
+.sitecore-pagination-prev-page {
+  cursor: pointer;
+  color: var(--sdc-palette-text-primary);
+  margin: 0 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sitecore-pagination-prev-page:hover {
+  color: var(--sdc-palette-primary-main);
+}
+
+.sitecore-pagination-prev-page[data-current='true'] {
+  color: var(--sdc-palette-primary-main);
+  pointer-events: none;
+  text-decoration-line: none;
+  display: none;
+}
+
+/* PaginationNextPage */
+.sitecore-pagination-next-page {
+  cursor: pointer;
+  color: var(--sdc-palette-text-primary);
+  margin: 0 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sitecore-pagination-next-page:hover {
+  color: var(--sdc-palette-primary-main);
+}
+
+.sitecore-pagination-next-page[data-current='true'] {
+  color: var(--sdc-palette-primary-main);
+  pointer-events: none;
+  text-decoration-line: none;
+  display: none;
+}
+
+/* PaginationFirstPage */
+.sitecore-pagination-first-page {
+  font-size: var(--sdc-typography-fontSize2-fontSize);
+  cursor: pointer;
+  color: var(--sdc-palette-text-primary);
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.sitecore-pagination-first-page:hover {
+  color: var(--sdc-palette-primary-main);
+}
+
+.sitecore-pagination-first-page[data-current='true'] {
+  color: var(--sdc-palette-primary-main);
+  pointer-events: none;
+  text-decoration-line: none;
+  display: none;
+}
+
+/* PaginationLastPage */
+.sitecore-pagination-last-page {
+  font-size: var(--sdc-typography-fontSize2-fontSize);
+  cursor: pointer;
+  color: var(--sdc-palette-text-primary);
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.sitecore-pagination-last-page:hover {
+  color: var(--sdc-palette-primary-main);
+}
+
+.sitecore-pagination-last-page[data-current='true'] {
+  color: var(--sdc-palette-primary-main);
+  pointer-events: none;
+  text-decoration-line: none;
+}
+
+/* PaginationPage */
+.sitecore-pagination-page {
+  cursor: pointer;
+  color: var(--sdc-palette-text-primary);
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.sitecore-pagination-page:hover {
+  color: var(--sdc-palette-primary-main);
+}
+
+.sitecore-pagination-page[data-current='true'] {
+  color: var(--sdc-palette-primary-main);
+  pointer-events: none;
+  text-decoration-line: none;
+}
+
+/* PaginationPages */
+.sitecore-pagination-pages {
+}
+
+/* Wrapper */
+.sitecore-wrapper {
+}
+
+/* MainArea */
+.sitecore-main-area {
+  color: var(--sdc-palette-text-primary);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize);
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  padding: 0 var(--sdc-spacing-m);
+}
+
+/* LeftArea */
+.sitecore-left-area {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: none;
+  width: 25%;
+  margin-right: var(--sdc-spacing-l);
+  margin-top: var(--sdc-spacing-m);
+}
+
+/* RightArea */
+.sitecore-right-area {
+  display: flex;
+  padding: 50px;
+  padding-bottom: 150px;
+  flex-direction: column;
+  flex: 4 1 0%;
+}
+
+/* RightTopArea */
+.sitecore-right-top-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Grid */
+.sitecore-grid {
+  width: 100%;
+}
+
+/* ClearFilters */
+.sitecore-clear-filters {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font-size: var(--sdc-typography-fontSize);
+}
+
+.sitecore-clear-filters:hover {
+  color: var(--sdc-palette-primary-main);
+  cursor: pointer;
+}
+
+/* FilterContainer */
+.sitecore-filter-container {
+  margin-bottom: var(--sdc-spacing-m);
+}
+
+/* FilterHeaderContainer */
+.sitecore-filter-header-container {
+  display: flex;
+  margin-bottom: var(--sdc-spacing-s);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FilterHeader */
+.sitecore-filter-header {
+  font-size: var(--sdc-typography-fontSize4-fontSize);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-weight: 600;
+  margin: 0;
+}
+
+/* SelectedFiltersList */
+.sitecore-selected-filters-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* SelectedFiltersListItem */
+.sitecore-selected-filters-list-item {
+  color: var(--sdc-palette-common-white);
+  cursor: pointer;
+  background-color: var(--sdc-palette-grey-600);
+  border: none;
+  border-radius: var(--sdc-border-radius);
+  padding: var(--sdc-spacing-s) 20px 6px var(--sdc-spacing-s);
+  margin: var(--sdc-spacing-xs);
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.sitecore-selected-filters-list-item::before {
+  content: ' ';
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  transform: rotate(-45deg);
+}
+
+.sitecore-selected-filters-list-item::after {
+  content: ' ';
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+/* PageControls */
+.sitecore-page-controls {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize3-fontSize);
+}
+
+/* QuerySummary */
+.sitecore-query-summary {
+  font-family: var(--sdc-typography-fontFamilySystem);
+  font-size: var(--sdc-typography-fontSize3-fontSize);
+  font-weight: bold;
+  margin: auto 0;
+}
+
+/* LoaderContainer */
+.sitecore-loader-container {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: white;
+  opacity: 0.5;
+  z-index: 100;
+}
+
+/* LoaderAnimation */
+.sitecore-loader-animation {
+  animation: rotate-animation 2s linear infinite;
+  display: block;
+  fill: var(--sdc-palette-primary-main);
+  height: 50px;
+  margin: auto;
+  width: 50px;
+}
+
+/* NoResults */
+.sitecore-no-results {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Input */
+.sitecore-input {
+  margin: var(--sdc-spacing-m) auto;
+  width: 50%;
+  display: block;
+  position: relative;
+}
+
+.sitecore-input input {
+  padding: var(--sdc-spacing-s);
+  font-family: var(--sdc-typography-fontFamilySystem);
+  border: 1px solid var(--sdc-palette-grey-400);
+  width: 100%;
+  position: relative;
+}
+
+.sitecore-input input:focus,
+.sitecore-input input:active {
+  border: 1px solid var(--sdc-palette-primary-main);
+  outline: none;
+}
+
+.sitecore-input svg {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: var(--sdc-palette-grey-800);
+  width: 20px;
+  height: 20px;
+}
+
+.sitecore-input input:focus + svg {
+  color: var(--sdc-palette-primary-main);
+}
+
+.highlightKeyword{
+  color: var(--sdc-palette-primary-dark) !important;
+}

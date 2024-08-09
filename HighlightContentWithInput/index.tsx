@@ -27,7 +27,6 @@ import {
   Select,
   SortSelect,
 } from "@sitecore-search/ui";
-import HtmlRenderer from "./HtmlRenderer";
 import { RichText } from "@sitecore-jss/sitecore-jss-nextjs";
 
 type ArticleModel = {
